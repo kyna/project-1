@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="34" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons\;src\;" />
+		<Build>
+			<Target title="release">
+				<Option output="bin\$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\release" />
+				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworks.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib" />
+				</Linker>
+			</Target>
+			<Target title="debug">
+				<Option output="bin\$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\debug\" />
+				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworksDebug.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wno-multichar" />
+			<Add directory="..\..\..\libs\glu\include" />
+			<Add directory="..\..\..\libs\freetype\include" />
+			<Add directory="..\..\..\libs\freetype\include\freetype2" />
+			<Add directory="..\..\..\libs\FreeImage\include" />
+			<Add directory="..\..\..\libs\quicktime\include" />
+			<Add directory="..\..\..\libs\rtAudio\include" />
+			<Add directory="..\..\..\libs\fmodex\include" />
+			<Add directory="..\..\..\libs\videoInput\include" />
+			<Add directory="..\..\..\libs\glew\include" />
+			<Add directory="..\..\..\libs\glut\include" />
+			<Add directory="..\..\..\libs\openFrameworks" />
+			<Add directory="..\..\..\libs\openFrameworks\3d" />
+			<Add directory="..\..\..\libs\openFrameworks\app" />
+			<Add directory="..\..\..\libs\openFrameworks\communication" />
+			<Add directory="..\..\..\libs\openFrameworks\events" />
+			<Add directory="..\..\..\libs\openFrameworks\gl" />
+			<Add directory="..\..\..\libs\openFrameworks\graphics" />
+			<Add directory="..\..\..\libs\openFrameworks\math" />
+			<Add directory="..\..\..\libs\openFrameworks\sound" />
+			<Add directory="..\..\..\libs\openFrameworks\types" />
+			<Add directory="..\..\..\libs\openFrameworks\utils" />
+			<Add directory="..\..\..\libs\openFrameworks\video" />
+			<Add directory="..\..\..\libs\poco\include" />
+			<Add directory="..\..\..\libs\tess2\include" />
+			<Add directory="..\..\..\libs\cairo\include\cairo" />
+			<Add directory="../../../addons/ofxFakeMotionBlur-master/libs" />
+			<Add directory="../../../addons/ofxFakeMotionBlur-master/src" />
+			<Add directory="../../../addons\ofxFakeMotionBlur-master\src" />
+			<Add directory="../../../addons/ofxOpenSteer-master/libs" />
+			<Add directory="../../../addons/ofxOpenSteer-master/src" />
+			<Add directory="../../../addons\ofxOpenSteer-master\libs\opensteer" />
+			<Add directory="../../../addons\ofxOpenSteer-master\libs\opensteer\include" />
+			<Add directory="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+			<Add directory="../../../addons\ofxOpenSteer-master\libs\opensteer\src" />
+			<Add directory="../../../addons\ofxOpenSteer-master\src" />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\..\libs\FreeImage\lib\win_cb\FreeImage.lib" />
+			<Add library="..\..\..\libs\rtAudio\lib\win_cb\librtaudio.a" />
+			<Add library="..\..\..\libs\quicktime\lib\win_cb\qtmlClient.lib" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libcairo.a" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libpixman-1.a" />
+			<Add library="..\..\..\libs\freetype\lib\win_cb\libfreetype.a" />
+			<Add library="..\..\..\libs\glut\lib\win_cb\libglut.a" />
+			<Add library="..\..\..\libs\videoInput\lib\win_cb\videoInputLib.a" />
+			<Add library="..\..\..\libs\fmodex\lib\win_cb\libfmodex.a" />
+			<Add library="..\..\..\libs\glew\lib\win_cb\glew32s.lib" />
+			<Add library="..\..\..\libs\glu\lib\win_cb\glu32.lib" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNet.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoUtil.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoXML.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoFoundation.a" />
+			<Add library="..\..\..\libs\tess2\lib\win_cb\libtess2.a" />
+			<Add library="opengl32" />
+			<Add library="gdi32" />
+			<Add library="msimg32" />
+			<Add library="glu32" />
+			<Add library="dsound" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="strmbase" />
+			<Add library="strmiids" />
+			<Add library="z" />
+			<Add library="uuid" />
+			<Add library="ole32" />
+			<Add library="oleaut32" />
+			<Add library="setupapi" />
+			<Add library="wsock32" />
+			<Add library="ws2_32" />
+			<Add library="Iphlpapi" />
+			<Add library="Comdlg32" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;" />
+			<Add after="cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="src\main.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src\testApp.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src\testApp.h">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+		<Unit filename="../../../addons\ofxFakeMotionBlur-master\src\ofxFakeMotionBlur.h">
+			<Option virtualFolder="addons\ofxFakeMotionBlur-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxFakeMotionBlur-master\src\ofxFakeMotionBlur2.h">
+			<Option virtualFolder="addons\ofxFakeMotionBlur-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\src\ofxOpenSteer.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\src\ofxOpenSteerPlugin.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\src\ofxOpenSteerPlugin.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\src\ofxOpenSteerTypes.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\src\ofxOpenSteerUtils.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\src\ofxOpenSteerVehicle.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\src\ofxOpenSteerVehicle.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\AbstractVehicle.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Annotation.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Camera.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Clock.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Color.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Draw.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\LocalSpace.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\lq.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Obstacle.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\OldPathway.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\OpenSteerDemo.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Path.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Pathway.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\PlugIn.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\PolylineSegmentedPath.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\PolylineSegmentedPathwaySegmentRadii.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\PolylineSegmentedPathwaySingleRadius.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Proximity.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\QueryPathAlike.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\QueryPathAlikeBaseDataExtractionPolicies.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\QueryPathAlikeMappings.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\QueryPathAlikeUtilities.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\SegmentedPath.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\SegmentedPathAlikeUtilities.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\SegmentedPathway.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\SharedPointer.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\SimpleVehicle.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\StandardTypes.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\SteerLibrary.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\UnusedParameter.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Utilities.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Vec3.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer\Vec3Utilities.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\include\OpenSteer" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Camera.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Clock.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Color.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Draw.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\lq.c">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Obstacle.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\OldPathway.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\OpenSteerDemo.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Path.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Pathway.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\PlugIn.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\PolylineSegmentedPath.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\PolylineSegmentedPathwaySegmentRadii.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\PolylineSegmentedPathwaySingleRadius.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\SegmentedPath.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\SegmentedPathway.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\SimpleVehicle.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\TerrainRayTest.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\TerrainRayTest.h">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Vec3.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+		<Unit filename="../../../addons\ofxOpenSteer-master\libs\opensteer\src\Vec3Utilities.cpp">
+			<Option virtualFolder="addons\ofxOpenSteer-master\libs\opensteer\src" />
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
